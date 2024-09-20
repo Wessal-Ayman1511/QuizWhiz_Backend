@@ -157,3 +157,5 @@ Werkzeug==3.0.4
 yarg==0.1.9
 zipp==3.20.1
 zope.interface==4.7.1
+mysqlclient==2.1.1
+
