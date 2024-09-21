@@ -1,16 +1,31 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "run.py",
-        "use": "@vercel/python"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/api/routes/(.*)",
-        "dest": "run.py"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "run.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/exam-content/(.*)",
+      "dest": "run.py"
+    },
+    {
+      "src": "/api/exams/(.*)",
+      "dest": "run.py"
+    },
+    {
+      "src": "/api/results/(.*)",
+      "dest": "run.py"
+    },
+    {
+      "src": "/api/student/results/latest",
+      "dest": "run.py"
+    },
+    {
+      "src": "/api/exams/(.*)/submit",
+      "dest": "run.py"
+    }
+  ]
+}
